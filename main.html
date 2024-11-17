@@ -4,10 +4,45 @@
 
 <head>
 	<link rel="stylesheet" href="styles.css">
+	    <style>
+        /* Style for the body to ensure proper centering */
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f0f8ff; /* Optional: light background for better visibility */
+        }
+
+        /* Style for the centered box */
+        .center-box {
+            width: 200px;
+            height: 200px;
+            background-color: lightblue;
+            border: 2px solid black;
+            position: relative; /* Needed for inner text centering */
+        }
+
+        /* Style for the centered text */
+        .center-box p {
+            color: purple;
+            font-size: 18px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            margin: 0;
+        }
+    </style>
+
 </head>
 
 <body>
 	<!-- the entire body must be written by student -->
+	<div class="center-box">
+        <p>This is center.</p>
+    </div>
     <script type="text/javascript" src="./script.js">
 </script>
 
